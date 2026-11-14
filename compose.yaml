@@ -1,0 +1,14 @@
+services:
+  portal:
+    build: .
+    ports:
+      - "127.0.0.1:9125:8080"
+    environment:
+      PORTAL_USERNAME: ${PORTAL_USERNAME:?Set PORTAL_USERNAME in .env}
+      PORTAL_PASSWORD: ${PORTAL_PASSWORD:?Set PORTAL_PASSWORD in .env}
+      DATA_DIR: /data
+    volumes:
+      - portal-data:/data
+    restart: unless-stopped
+volumes:
+  portal-data:

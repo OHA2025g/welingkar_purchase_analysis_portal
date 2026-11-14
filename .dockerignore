@@ -1,0 +1,5 @@
+source/
+.env
+verification.json
+README.md
+*.zip

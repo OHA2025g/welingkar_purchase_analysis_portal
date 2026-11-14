@@ -1,0 +1,28 @@
+{
+  "portal": "Welingkar purchase analysis",
+  "period": {
+    "start": "2026-04-01",
+    "end": "2026-09-30"
+  },
+  "detail_rows": 2632,
+  "internal_vouchers": 2339,
+  "recorded_gross_inr": 279999103.9312,
+  "net_exceptions": 212,
+  "unvalued_vouchers": 8,
+  "pages_in_report": 68,
+  "checks": [
+    "Original workbook control totals",
+    "All four unit/date slices",
+    "Null handling for unvalued vouchers and empty scopes",
+    "Distinct line and complete-voucher grains",
+    "Data-quality counts",
+    "Counterparty name groups",
+    "CSV escaping"
+  ],
+  "sha256": {
+    "public/index.html": "d8e1360ec16d3f07362934dc391ecba0ae1004a4a0aca98f9cf01500069d5c49",
+    "public/reports/Welingkar_Purchase_Registers_Deep_Dive_Report_Apr_Sep_2026.pdf": "3d97eea06d23ca499140e54e0ac484acfcdf2f98c59e5c7857fe00f365b9b081",
+    "source/reviewed-data.json": "5ee3e87b1963791c480a8d6db7150b18f4f02877be85b9a599baf163e913244e",
+    "serve.py": "0281338f98c0b8ce5d43dc170250eb5532c57421b971240ff025ce99e8dd5d59"
+  }
+}

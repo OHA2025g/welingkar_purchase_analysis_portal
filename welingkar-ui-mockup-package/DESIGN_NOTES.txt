@@ -1,0 +1,31 @@
+Welingkar purchase analysis — UI mockup, v1
+28 October 2026
+
+Open index.html in a modern browser. No server, installation, or internet connection is needed. Use the left navigation to inspect all eight screens. Open mobile.html to inspect the 390 px layout.
+
+DESIGN DIRECTION
+A navy sidebar keeps all eight sections discoverable. White cards on a cool light canvas separate financial summaries, source context, and review work. Teal is the primary data colour. Amber denotes a review candidate and does not imply proven loss or a confirmed accounting error. Compact INR values retain crore and lakh units.
+
+SCREEN COVERAGE
+Overview: headline recorded values, a reconciliation alert, monthly gross, unit distribution, and a unit comparison.
+Spend analysis: monthly unit comparisons, goods/service mix, capital-work context, and original category labels.
+Counterparties: concentration, identity-review candidates, and a searchable portfolio.
+Tax & TDS: recorded tax metrics, GST by unit, and review context.
+Reconciliation: exception distribution, the recorded-net check, a searchable queue, and an inspection drawer.
+Data quality: field completeness, source integrity, and findings with explicit record grains.
+Transactions: a denser table and source-inspection interaction pattern; selected voucher references demonstrate the layout.
+Full report: an executive-summary reading view with a section outline.
+Mobile: collapsible navigation, two-column KPI cards, stacked charts, and horizontally scrolling tables.
+
+WORKING PREVIEW INTERACTIONS
+All eight sidebar routes, overview/spend unit selection, table searches, unit detail drawers, voucher detail drawers, period information, mobile navigation, and a concept-summary CSV export.
+The unit comparison chart remains an explicitly labelled all-unit reference when a unit is selected. Category, goods/service, and capital-work panels are also explicitly labelled as all-unit views.
+
+SOURCE AND LIMITS
+The UI was inspected directly from the supplied http://127.0.0.1:9125/ dashboard on 28 October 2026. Existing source metrics visible in that dashboard were used for the mockup; the workbooks and calculation pipeline were not audited or modified.
+This is a design concept using a fixed April–September 2026 snapshot. It is not connected to the production data source. Some filters, table controls, report sections, and source-row actions are visual concepts and explicitly explain their limits when selected. CSV exports contain a concept summary, not the full source register. Screenshots show the opening viewport; the complete layouts are available in the HTML preview.
+The transaction screen intentionally uses selected existing voucher references, not invented Excel detail rows. Individual references for the eight unvalued vouchers were not supplied in the preview.
+The original dashboard and source workbooks remain unchanged. Budget, actual payments, payables, tax-credit eligibility, and confirmed losses are not inferred.
+
+CHECKS COMPLETED
+JavaScript syntax checked. All eight routes opened in the browser. The Bengaluru unit filter returned 738 vouchers, ₹8.90 Cr recorded gross, and 163 net exceptions. Searching the reconciliation preview for Rio reduced the visible table to two records. Unit and voucher detail-drawer patterns were inspected. A 390 px mobile iframe was rendered. All eight opening screens and a mobile concept were captured.
